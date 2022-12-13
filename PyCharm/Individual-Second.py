@@ -14,7 +14,7 @@ if __name__ == '__main__':
         if item < a_min:
             i_min, a_min = i, item
     count = 0
-    count = len([num for ind, num in enumerate(a) if num == 0])
+    count = len([num for num in a if num == 0])
     s = sum([num for ind, num in enumerate(a) if ind > i_min])
 
     print(f"Количество: {count}\nСумма: {s}\n")
