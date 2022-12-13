@@ -13,6 +13,6 @@ if __name__ == '__main__':
         exit(1)
     # Определить индексы минимального и максимального элемента
     count = 0
-    s = sum([num for ind, num in enumerate(a) if abs(num) < 3])
-    count = len([num for ind, num in enumerate(a) if num % 9 == 0])
+    s = sum([num for num in a if abs(num) < 3])
+    count = len([num for num in a if num % 9 == 0])
     print(f"Количество: {count}\nСумма: {s}")
